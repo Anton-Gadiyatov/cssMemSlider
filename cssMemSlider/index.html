@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
     <title>cssMemSlider</title>
   </head>
   <body>
     <main class="main">
       <div class="content">
+        <input type="radio" name="slider" id="slide1" checked />
+        <input type="radio" name="slider" id="slide2" />
+        <input type="radio" name="slider" id="slide3" />
+        <input type="radio" name="slider" id="slide4" />
         <div class="slider__top">
-          <input type="radio" name="slider" id="slider1" checked />
-          <input type="radio" name="slider" id="slider2" />
-          <input type="radio" name="slider" id="slider3" />
-          <input type="radio" name="slider" id="slider4" />
           <div class="slider__top-wrapper">
             <div class="slide slide1"></div>
             <div class="slide slide2"></div>
@@ -31,16 +31,16 @@
             <div class="text-content">text 4</div>
           </div>
           <div class="slider__controls">
-            <label class="slider__control" for="slider1">
+            <label class="slider__control" for="slide1">
               <span class="slider__control-circle"></span>
             </label>
-            <label class="slider__control" for="slider2">
+            <label class="slider__control" for="slide2">
               <span class="slider__control-circle"></span>
             </label>
-            <label class="slider__control" for="slider3">
+            <label class="slider__control" for="slide3">
               <span class="slider__control-circle"></span>
             </label>
-            <label class="slider__control" for="slider4">
+            <label class="slider__control" for="slide4">
               <span class="slider__control-circle"></span>
             </label>
           </div>
