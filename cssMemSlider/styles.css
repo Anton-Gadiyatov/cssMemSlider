@@ -32,6 +32,10 @@ main {
   display: none;
 }
 
+.slider__top {
+  border-radius: 10px;
+}
+
 .slider__top,
 .slider__text-wrapper {
   overflow: hidden;
@@ -65,7 +69,7 @@ main {
   background-color: black;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .slide1 {
@@ -113,6 +117,11 @@ main {
   ~ .slider__bottom
   .slider__controls
   .slider__control:hover:nth-child(1)
+  > .slider__control-circle,
+#slide1:checked
+  ~ .slider__bottom
+  .slider__controls
+  .slider__control:active:nth-child(1)
   > .slider__control-circle {
   background-color: blue;
   border: 1px solid brown;
@@ -131,6 +140,11 @@ main {
   ~ .slider__bottom
   .slider__controls
   .slider__control:hover:nth-child(2)
+  > .slider__control-circle,
+#slide1:checked
+  ~ .slider__bottom
+  .slider__controls
+  .slider__control:active:nth-child(2)
   > .slider__control-circle {
   background-color: blue;
   border: 1px solid brown;
@@ -149,6 +163,11 @@ main {
   ~ .slider__bottom
   .slider__controls
   .slider__control:hover:nth-child(3)
+  > .slider__control-circle,
+#slide1:checked
+  ~ .slider__bottom
+  .slider__controls
+  .slider__control:active:nth-child(3)
   > .slider__control-circle {
   background-color: blue;
   border: 1px solid brown;
@@ -167,6 +186,11 @@ main {
   ~ .slider__bottom
   .slider__controls
   .slider__control:hover:nth-child(4)
+  > .slider__control-circle,
+#slide1:checked
+  ~ .slider__bottom
+  .slider__controls
+  .slider__control:active:nth-child(4)
   > .slider__control-circle {
   background-color: blue;
   border: 1px solid brown;
