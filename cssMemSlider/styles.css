@@ -62,3 +62,40 @@ main {
 .slide4 {
   background-image: url('./assets/slider-4.jpeg');
 }
+
+.slider__bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.slider__text-wrapper {
+}
+
+.slider__controls {
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.slider__control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.slider__control-circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid blue;
+  border-radius: 50%;
+}
+
+.slider__control-circle:hover,
+.slider__control-circle:active {
+  background-color: blue;
+}
