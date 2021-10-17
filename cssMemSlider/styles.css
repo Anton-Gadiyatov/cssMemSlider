@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  background-color: #999999;
+}
+
+main {
+  margin: 0 auto;
+  width: 80%;
+  background-color: bisque;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.slider__top {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider__top input[type='radio'] {
+  display: none;
+}
+
+.slider__top-wrapper {
+  width: 400%;
+  display: flex;
+}
+
+.slide {
+  width: 100%;
+  min-height: 300px;
+  background-color: black;
+}
