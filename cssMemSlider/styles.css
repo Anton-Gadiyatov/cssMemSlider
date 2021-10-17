@@ -34,12 +34,31 @@ main {
 }
 
 .slider__top-wrapper {
-  width: 400%;
+  width: 500%;
   display: flex;
 }
 
 .slide {
   width: 100%;
-  min-height: 300px;
+  min-height: 20rem;
   background-color: black;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide1 {
+  background-image: url('./assets/slider-1.jpeg');
+}
+
+.slide2 {
+  background-image: url('./assets/slider-2.jpeg');
+}
+
+.slide3 {
+  background-image: url('./assets/slider-3.jpeg');
+}
+
+.slide4 {
+  background-image: url('./assets/slider-4.jpeg');
 }
