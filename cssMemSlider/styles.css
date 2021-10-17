@@ -11,6 +11,7 @@ body {
 
 main {
   margin: 0 auto;
+  margin-top: 15%;
   width: 80%;
   background-color: bisque;
 }
@@ -28,7 +29,8 @@ main {
   display: none;
 }
 
-.slider__top {
+.slider__top,
+.slider__text-wrapper {
   overflow: hidden;
   width: 100%;
 }
@@ -39,6 +41,16 @@ main {
   width: 400%;
   min-height: 20rem;
   height: 100%;
+}
+
+.text-content {
+  display: flex;
+  transition: margin-left 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  width: 400%;
+}
+
+.text-content div {
+  width: 25%;
 }
 
 .slide {
@@ -94,12 +106,30 @@ main {
   border: 1px solid brown;
 }
 
+#slide1:checked
+  ~ .slider__bottom
+  .slider__controls
+  .slider__control:hover:nth-child(1)
+  > .slider__control-circle {
+  background-color: blue;
+  border: 1px solid brown;
+}
+
 #slide2:checked
   ~ .slider__bottom
   .slider__controls
   .slider__control:nth-child(2)
   > .slider__control-circle {
   background-color: brown;
+  border: 1px solid brown;
+}
+
+#slide2:checked
+  ~ .slider__bottom
+  .slider__controls
+  .slider__control:hover:nth-child(2)
+  > .slider__control-circle {
+  background-color: blue;
   border: 1px solid brown;
 }
 
@@ -112,6 +142,15 @@ main {
   border: 1px solid brown;
 }
 
+#slide3:checked
+  ~ .slider__bottom
+  .slider__controls
+  .slider__control:hover:nth-child(3)
+  > .slider__control-circle {
+  background-color: blue;
+  border: 1px solid brown;
+}
+
 #slide4:checked
   ~ .slider__bottom
   .slider__controls
@@ -121,21 +160,20 @@ main {
   border: 1px solid brown;
 }
 
+#slide4:checked
+  ~ .slider__bottom
+  .slider__controls
+  .slider__control:hover:nth-child(4)
+  > .slider__control-circle {
+  background-color: blue;
+  border: 1px solid brown;
+}
+
 .slider__bottom {
   display: flex;
   width: 100%;
   justify-content: space-between;
-}
-
-.slider__text-wrapper {
-  display: flex;
   align-items: center;
-  width: 400%;
-  overflow: hidden;
-}
-
-.text-content {
-  min-width: 100%;
 }
 
 .slider__controls {
@@ -161,7 +199,46 @@ main {
   border-radius: 50%;
 }
 
-.slider__control-circle:hover,
-.slider__control-circle:active {
+.slider__control:hover:nth-child(1) .slider__control-circle {
   background-color: blue;
+}
+
+.slider__control:hover:nth-child(2) .slider__control-circle {
+  background-color: blue;
+}
+
+.slider__control:hover:nth-child(3) .slider__control-circle {
+  background-color: blue;
+}
+
+.slider__control:hover:nth-child(4) .slider__control-circle {
+  background-color: blue;
+}
+
+#slide1:checked ~ .slider__bottom .slider__text-wrapper .text-content {
+  margin-left: 0;
+}
+
+#slide2:checked ~ .slider__bottom .slider__text-wrapper .text-content {
+  margin-left: -100%;
+}
+
+#slide3:checked ~ .slider__bottom .slider__text-wrapper .text-content {
+  margin-left: -200%;
+}
+
+#slide4:checked ~ .slider__bottom .slider__text-wrapper .text-content {
+  margin-left: -300%;
+}
+
+@media screen and (max-width: 600px) {
+  .slider__bottom {
+    flex-wrap: wrap;
+  }
+
+  .slider__controls {
+    width: 100%;
+    order: -1;
+    justify-content: center;
+  }
 }
